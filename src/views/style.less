@@ -1,0 +1,294 @@
+
+// 修改页面内 element-ui组件样式
+.alignLeft {
+  text-align: left !important;
+}
+
+.alignRight {
+  text-align: right !important;
+}
+
+.m-link-style {
+  text-decoration: underline !important;
+  color: #0000ff !important;
+  cursor: pointer !important;
+}
+
+div.home-page-container{
+  background: #ffffff;
+  border: 20px solid #f0f2f5;
+  overflow-x: scroll;
+  >div.home-page-wrapper{
+    width: 96.6%;
+    margin-right: 20px;
+    padding-right: 0px;
+    background: #ffffff;
+    >div.search-container{
+      padding-top: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      .search-center-list {
+        width: 1000px;
+        > li {
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: row;
+          height: 32px;
+          margin-bottom: 30px;
+          > div {
+            text-align: right;
+            margin-right: 30px;
+            flex: 1;
+            /deep/ .el-form-item {
+              width: 100%;
+              text-align: right !important;
+              margin-right: 0px;
+              display: flex;
+              flex-wrap: wrap-reverse;
+              flex-grow: 20;
+              > label {
+                text-align: left;
+                width: 86px;
+                float: left;
+              }
+              > div {
+                flex: 20;
+                > div.el-date-editor {
+                  width: 100%;
+                }
+                >div.el-select{
+                  width: 100%;
+                }
+                >div.el-cascader{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        > li.search-btn-container {
+          padding-bottom: 0px;
+          > div {
+          }
+        }
+      }
+    }
+    >div.operation-container {
+      padding: 20px 0px 0px 0px;
+    }
+    >div.list-container {
+      text-align: right;
+      > div.list-pagination-container {
+        padding: 16px;
+        line-height: 28px;
+        >div{
+          display: inline-block;
+        }
+        >div.page-total-container{
+          float: left;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(0, 0, 0, 0.42);
+          line-height: 28px;
+          font-size: 14px;
+        }
+      }
+      >div.total-container{
+        padding: 20px 0px;
+        >ul{
+          text-align: left;
+          >li{
+            display: inline-block;
+            margin-right: 100px;
+            >span{
+              line-height: 1;
+            }
+            >span:last-child{
+              margin-left: 14px;
+              font-weight: 700;
+              font-style: normal;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+   }
+}
+
+
+.home-body-container{
+
+}
+
+/deep/ .el-row {
+  > .el-col {
+    height: 55px;
+    text-align: right;
+    > .grid-content {
+    }
+    .el-form-item__label {
+      width: 88px;
+    }
+    .el-form-item {
+      margin-right: 0px;
+      > .el-form-item__label {
+      }
+    }
+  }
+}
+
+.defaultStyle {
+  // 更改 日期选择器样式
+  /deep/ &.el-date-editor {
+    > input {
+      width: 200%;
+    }
+    > i.el-icon-circle-close {
+      position: absolute;
+      right: 0;
+      background: #ffffff;
+    }
+  }
+}
+
+
+div.home-page-wrapper{
+  padding: 26px;
+  background: #f0f2f5;
+  >div.base-msg-container {
+    margin-bottom: 30px;
+    padding: 0px 25px 50px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #ffffff;
+    .m-link-style{
+      cursor: pointer !important;
+    }
+    > div.title {
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.84);
+      padding-top: 25px;
+    }
+    > .msg-list {
+      line-height: 1;
+      > li {
+        padding-top: 20px;
+        display: inline-block;
+        width: 33.33%;
+        > div {
+          display: inline-block;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.84);
+          margin-right: 18px;
+        }
+      }
+    }
+    > div.line {
+      margin-top: 30px;
+      height: 1px;
+      width: 100%;
+      background: #f0f0f0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    > div.tabs-container {
+      padding-top: 30px;
+    }
+    > div.list-container {
+      padding-top: 10px;
+      > div {
+        >div.hint-msg-container{
+          >ul{
+            line-height: 1;
+            > li {
+              padding-bottom: 20px;
+              display: inline-block;
+              width: 33.33%;
+              > div {
+                display: inline-block;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.84);
+                margin-right: 18px;
+                >a.link{
+                  color: #0000FF;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+        > div.list-pagination-container {
+          padding: 16px;
+          text-align: right;
+        }
+      }
+      >div.total-container{
+        >ul{
+          text-align: left;
+          >li{
+            display: inline-block;
+            margin-right: 100px;
+            >span{
+              line-height: 1;
+            }
+            >span:last-child{
+              margin-left: 14px;
+              font-weight: 700;
+              font-style: normal;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      > div.show {
+        display: block !important;
+      }
+      > div.list-pagination-container {
+        padding: 16px;
+        line-height: 28px;
+        overflow: hidden;
+        >div{
+          display: inline-block;
+          float: right;
+        }
+        >div.page-total-container{
+          float: left;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(0, 0, 0, 0.42);
+          line-height: 28px;
+          font-size: 14px;
+          padding: 2px 5px;
+        }
+      }
+      // 修改内部table样式
+      /deep/ .el-table {
+        .m-link-style {
+          text-decoration: underline !important;
+          color: #0000ff !important;
+          cursor: pointer !important;
+        }
+        .el-table__footer-wrapper{
+          font-weight: 900 !important;
+        }
+      }
+    }
+    // 带有选项卡的列表默认隐藏
+    >div.list-container.tabs-card-container{
+      >div{
+        display: none;
+      }
+    }
+    > div.confirm-btn-container {
+      text-align: center;
+    }
+  }
+}
